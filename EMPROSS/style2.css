@@ -1,0 +1,134 @@
+body{
+ display:inline
+ ;
+ position: relative;
+    height:1000px;
+    background-image: url(./backgroundlogin3.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+
+   }
+   
+   .main{
+    height:800px;
+    width:800px;
+   }
+   img{
+       height: 90px;
+       width: 160px;
+       position: relative;
+       left:60px;
+       top:10px;
+     border: 2px solid black;
+   }
+   
+   
+   .input{
+       position: relative;
+       left: 500px;
+       top:330px;
+       
+   }
+   #username{
+       position: relative;
+       left:500px;
+       top:20px;
+   }
+   #email{
+    position: relative;
+    left: 500px;
+    top:50px;
+   }
+   #code{
+    position: relative;
+    left: 500px;
+    top:80px;
+   }
+   #department{
+    position: relative;
+    left: 500px;
+    top:110px;
+   }
+   #confirm{
+    position: relative;
+    left: 500px;
+    top:210px;
+
+   }
+   .input__field{
+       padding: 10px;
+       width:270px;
+       
+       border:none;
+       border-radius: 4px;
+       font: inherit;
+       color:black;
+       background-color: transparent;
+       outline: 2px solid gray;
+   }
+   .input__label{
+       position: absolute;
+       top: 0;
+       left: 0;
+       transform: translate(10px,10px);
+       transform-origin: left;
+       transition: transform 0.25s;
+   
+   
+   }
+   .input__field:focus-visible~ .input__label,
+   .input__field:valid~.input__label {
+   transform: translate(0,-30px) scale(0.8);
+   color:indianred;
+   }
+   ..input__field:is(:focus-visiblem:valid){
+       outline-color: #fcc5cd;
+   }
+   .input__icon-wrapper{
+       position: absolute;
+       top: 50%;
+       right: 12px;
+       transform: translateY(-50%);
+       cursor: pointer;
+   }
+   .input__icon{
+       color:#999;
+       font-size:24px;
+   
+   }
+   .input__icon:hover{
+       color:333;
+   }
+   *,
+   ::before,
+   ::after{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   .ripple-btn{
+       position: relative;
+       left: 580px;
+       top:240px;
+      
+       color:blueviolet;
+       font-size: 18px;
+       border-radius:6px;
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       background-color: transparent;
+       border: 2px solid #fff;
+       box-shadow: 3px 0px 3px 0;
+       cursor: pointer;
+   }
+   .head{
+       position: relative;
+       left:570px;
+       top:80px;
+       font-size: xx-large;
+       font-weight: 1000;
+       font-family:'Times New Roman', Times, serif;
+       text-decoration: underline;
+       letter-spacing:.1em;
+     
+   }

@@ -1,0 +1,124 @@
+body{
+    position: fixed;
+ background-image: url(./backgroundlogin.jpg);
+ background-size:cover;
+ background-repeat:no-repeat;
+ background-position: center;
+ border: 5px solid black;
+ height:600px;
+ width:1500px;
+}
+img{
+    height: 90px;
+    width: 160px;
+    position: relative;
+    left:60px;
+    top:30px;
+  border: 2px solid black;
+}
+
+
+.input{
+    position: relative;
+    left: 500px;
+    top:200px;
+    
+}
+#username{
+    position: relative;
+    left:500px;
+    top:80px;
+}
+
+.input__field{
+    padding: 10px;
+    width:270px;
+    
+    border:none;
+    border-radius: 4px;
+    font: inherit;
+    color:#fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+}
+.input__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px,10px);
+    transform-origin: left;
+    transition: transform 0.25s;
+
+
+}
+.input__field:focus-visible~ .input__label,
+.input__field:valid~.input__label {
+transform: translate(0,-30px) scale(0.8);
+color:red;
+}
+..input__field:is(:focus-visiblem:valid){
+    outline-color: #fcc5cd;
+}
+.input__icon-wrapper{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.input__icon{
+    color:#999;
+    font-size:24px;
+
+}
+.input__icon:hover{
+    color:333;
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ripple-btn{
+    position: relative;
+    left: 590px;
+    top:200px;
+   
+    color:blueviolet;
+    font-size: 18px;
+    border-radius:6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: 3px 0px 3px 0;
+    cursor: pointer;
+}
+.head{
+    position: relative;
+    left:570px;
+    top:140px;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    letter-spacing:.05em;
+  
+}
+#signup{
+    position: absolute;
+    left:200px;
+    top:2px;
+    color:darkslateblue;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 385px;
+    top:220px;
+    margin: 0 0 2px 0;
+    text-decoration:underline;
+}
